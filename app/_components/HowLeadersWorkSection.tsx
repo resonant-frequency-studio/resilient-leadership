@@ -19,11 +19,7 @@ export default function HowLeadersWorkSection() {
             Ways leaders engage with us
           </Typography>
 
-          <Typography
-            variant="body-large"
-            as="p"
-            className="text-lg md:text-xl leading-[1.65] text-foreground-dark"
-          >
+          <Typography variant="body-large" as="p">
             Coaching looks different depending on your role, your context, and
             the challenges you are navigating. Our work supports leaders and
             organizations at key moments of growth, transition, and change.
@@ -44,11 +40,7 @@ export default function HowLeadersWorkSection() {
               <Typography variant="heading-4" as="h3">
                 Executive Coaching
               </Typography>
-              <Typography
-                variant="body"
-                as="p"
-                className="text-foreground-dark leading-[1.65]"
-              >
+              <Typography variant="body" as="p">
                 For leaders navigating complexity and responsibility who want
                 greater clarity, confidence, and steadiness in how they lead.
               </Typography>
@@ -65,11 +57,7 @@ export default function HowLeadersWorkSection() {
               <Typography variant="heading-4" as="h3">
                 Team Coaching
               </Typography>
-              <Typography
-                variant="body"
-                as="p"
-                className="text-foreground-dark leading-[1.65]"
-              >
+              <Typography variant="body" as="p">
                 For leadership teams and groups seeking stronger communication,
                 trust, and alignment as they work through growth or transition.
               </Typography>
@@ -86,11 +74,7 @@ export default function HowLeadersWorkSection() {
               <Typography variant="heading-4" as="h3">
                 Organizational Development & Change
               </Typography>
-              <Typography
-                variant="body"
-                as="p"
-                className="text-foreground-dark leading-[1.65]"
-              >
+              <Typography variant="body" as="p">
                 For organizations ready to build the leadership capacity,
                 systems, and practices needed to navigate meaningful change.
               </Typography>

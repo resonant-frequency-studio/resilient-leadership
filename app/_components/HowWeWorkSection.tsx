@@ -41,33 +41,21 @@ export default function HowWeWorkSection() {
             </Typography>
 
             <div className="flex flex-col gap-4 md:gap-6">
-              <Typography
-                variant="body-large"
-                as="p"
-                className="text-lg md:text-xl leading-[1.65] text-foreground-dark"
-              >
+              <Typography variant="body-large" as="p">
                 At Resilient Leadership, we believe leadership development is
                 not about fixing what is broken or adopting a prescribed style.
                 It is about creating the awareness, capacity, and resilience
                 needed to lead effectively in complex, real-world conditions.
               </Typography>
 
-              <Typography
-                variant="body-large"
-                as="p"
-                className="text-lg md:text-xl leading-[1.65] text-foreground-dark"
-              >
+              <Typography variant="body-large" as="p">
                 Our work integrates timeless wisdom with modern insights from
                 neuroscience, psychology, and organizational systems. We focus
                 not only on what leaders do, but on how they think, relate, and
                 respond, especially under pressure.
               </Typography>
 
-              <Typography
-                variant="body-large"
-                as="p"
-                className="text-lg md:text-xl leading-[1.65] text-foreground-dark"
-              >
+              <Typography variant="body-large" as="p">
                 Coaching is a collaborative process. We create a thoughtful,
                 confidential space where leaders can slow down, reflect
                 honestly, and explore new possibilities. From that space, more
@@ -75,11 +63,7 @@ export default function HowWeWorkSection() {
                 leadership practices emerge.
               </Typography>
 
-              <Typography
-                variant="body-large"
-                as="p"
-                className="text-lg md:text-xl leading-[1.65] text-foreground-dark"
-              >
+              <Typography variant="body-large" as="p">
                 Our role is not to provide answers. It is to help you see more
                 clearly so you can lead in a way that is aligned, grounded, and
                 genuinely your own.

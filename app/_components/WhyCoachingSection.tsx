@@ -48,22 +48,14 @@ export default function WhyCoachingSection() {
                 </div>
 
                 <div className="flex flex-col gap-4 md:gap-6">
-                  <Typography
-                    variant="body-large"
-                    as="p"
-                    className="text-lg md:text-xl leading-[1.65] text-foreground-dark"
-                  >
+                  <Typography variant="body-large" as="p">
                     <strong>Leadership carries responsibility,</strong> often in
                     ways that are not visible to others. The decisions you make
                     affect your people, your organization, and your own sense of
                     purpose. The pace is demanding, the challenges are complex,
                     and there is rarely space to pause and reflect.
                   </Typography>
-                  <Typography
-                    variant="body-large"
-                    as="p"
-                    className="text-lg md:text-xl leading-[1.65] text-foreground-dark"
-                  >
+                  <Typography variant="body-large" as="p">
                     <strong>Coaching provides a dedicated space</strong> to slow
                     down, examine how you are leading, and regain perspective.
                     Decisions feel more intentional. Communication becomes more
@@ -101,11 +93,7 @@ export default function WhyCoachingSection() {
                   {/* Frosted glass text overlay at bottom */}
                   <div className="absolute bottom-0 left-0 right-0 p-4">
                     <div className="bg-white/10 backdrop-blur-md rounded-xl p-3 min-h-[80px] flex items-center">
-                      <Typography
-                        variant="body"
-                        as="p"
-                        className="text-base md:text-lg leading-relaxed text-foreground-light"
-                      >
+                      <Typography variant="body-light" as="p">
                         {benefit.text}
                       </Typography>
                     </div>

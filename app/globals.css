@@ -75,6 +75,14 @@
 
   /* Font Families - Set via Next.js font variables in layout.tsx */
 
+  /* Custom Font Sizes */
+  --font-size-64: 64px;
+  --font-size-48: 48px;
+  --font-size-40: 40px;
+  --font-size-32: 32px;
+  --font-size-24: 24px;
+  --font-size-20: 20px;
+
   /* Typography - Headings */
   --font-weight-heading-light: 400;
   --font-weight-heading-medium: 500;
@@ -105,6 +113,39 @@
     padding-left: 24px;
     padding-right: 24px;
   }
+}
+
+/* Typography Utilities */
+@utility text-heading-1 {
+  font-size: var(--font-size-64);
+}
+
+@utility text-heading-2 {
+  font-size: var(--font-size-48);
+}
+
+@utility text-heading-3 {
+  font-size: var(--font-size-40);
+}
+
+@utility text-heading-4 {
+  font-size: var(--font-size-32);
+}
+
+@utility text-heading-5 {
+  font-size: var(--font-size-24);
+}
+
+@utility text-heading-6 {
+  font-size: var(--font-size-20);
+}
+
+@utility leading-body {
+  line-height: var(--line-height-body);
+}
+
+@utility tracking-nav {
+  letter-spacing: var(--letter-spacing-nav);
 }
 
 /* Base Styles */

@@ -38,11 +38,7 @@ export default function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, ease: 'easeOut', delay: 1.2 }}
             >
-              <Typography
-                variant="body-large"
-                as="p"
-                className="max-w-xl text-lg md:text-xl leading-[1.65] text-foreground-dark"
-              >
+              <Typography variant="body-large" as="p" className="max-w-xl">
                 Executive coaching for leaders who are navigating complexity,
                 responsibility, and change and want to lead with courage,
                 wisdom, and steadiness.
@@ -99,11 +95,7 @@ export default function Hero() {
               className="flex flex-col gap-4"
             >
               <Pill>Clients we work with</Pill>
-              <Typography
-                variant="body"
-                as="p"
-                className="text-foreground-dark/60 leading-[1.65] text-sm"
-              >
+              <Typography variant="body-muted" as="p" className="text-sm">
                 Leaders and organizations across technology, healthcare,
                 finance, and professional services.
               </Typography>

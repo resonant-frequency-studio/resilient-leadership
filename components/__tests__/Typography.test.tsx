@@ -41,7 +41,7 @@ describe('Typography', () => {
       <Typography variant="heading-1">Title</Typography>
     )
     const element = container.firstChild as HTMLElement
-    expect(element).toHaveClass('text-4xl', 'md:text-5xl')
+    expect(element).toHaveClass('text-4xl', 'md:text-heading-1')
   })
 
   it('applies custom className', () => {

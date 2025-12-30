@@ -43,22 +43,14 @@ export default function AboutSection() {
               </Typography>
 
               <div className="flex flex-col gap-4 md:gap-6">
-                <Typography
-                  variant="body-large"
-                  as="p"
-                  className="text-lg md:text-xl leading-[1.65] text-foreground-dark"
-                >
+                <Typography variant="body-large" as="p">
                   Charlene works with leaders navigating complexity,
                   responsibility, and change. Her approach is grounded,
                   thoughtful, and direct, creating space for clarity,
                   resilience, and meaningful growth.
                 </Typography>
 
-                <Typography
-                  variant="body-large"
-                  as="p"
-                  className="text-lg md:text-xl leading-[1.65] text-foreground-dark"
-                >
+                <Typography variant="body-large" as="p">
                   If you are considering coaching, the first step is a
                   conversation. This is a 45-minute, confidential space to talk
                   through what you are facing and explore whether working

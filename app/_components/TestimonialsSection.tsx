@@ -39,7 +39,7 @@ export default function TestimonialsSection() {
             What leaders say
           </Typography>
 
-          <Typography variant="body" as="p" className="text-foreground-dark/70">
+          <Typography variant="body-muted" as="p">
             A few reflections from leaders who have worked with Charlene.
           </Typography>
         </motion.div>
@@ -86,7 +86,7 @@ export default function TestimonialsSection() {
               <Typography
                 variant="body-large"
                 as="p"
-                className="text-lg md:text-xl leading-[1.65] text-foreground-dark whitespace-pre-line"
+                className="whitespace-pre-line"
               >
                 &ldquo;{testimonial.quote}&rdquo;
               </Typography>
@@ -94,11 +94,7 @@ export default function TestimonialsSection() {
               {/* Author info with image */}
               <div className="flex items-end gap-4 mt-auto">
                 <div className="flex-1">
-                  <Typography
-                    variant="body"
-                    as="p"
-                    className="font-semibold text-foreground-dark"
-                  >
+                  <Typography variant="body-semibold" as="p">
                     {testimonial.name}
                   </Typography>
                   <Typography
