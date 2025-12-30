@@ -37,7 +37,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <SmoothScrollProvider />
         <Header />
-        <main className="min-h-screen bg-main pt-36 pb-20">{children}</main>
+        <main className="min-h-screen bg-main">{children}</main>
         <Footer />
       </body>
     </html>

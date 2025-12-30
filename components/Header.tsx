@@ -82,13 +82,13 @@ const Header = () => {
         className={`
           fixed top-0 left-0 right-0 z-50
           h-[74px]
-          bg-main border-b border-checkbox-border
+          bg-main
           transition-transform duration-300 ease-in-out
           ${isVisible ? 'translate-y-0' : '-translate-y-full'}
           hidden md:block
         `}
       >
-        <div className="max-w-[1440px] mx-auto h-full px-6 flex items-center justify-between">
+        <div className="max-width-container h-full flex items-center justify-between">
           {/* Logo */}
           <div className="shrink-0">
             <Link href="/" className="flex items-center">
@@ -149,7 +149,7 @@ const Header = () => {
           md:hidden
         "
       >
-        <div className="max-w-[1440px] mx-auto h-full px-4 flex items-center justify-between">
+        <div className="mx-auto h-full px-4 flex items-center justify-between">
           {/* Left: MenuButton and Logo */}
           <div className="flex items-center gap-3">
             <MenuButton

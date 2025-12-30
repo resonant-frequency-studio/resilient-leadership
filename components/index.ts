@@ -25,3 +25,10 @@ export { default as SocialLinks } from './SocialLinks'
 export type { SocialLinksProps } from './SocialLinks'
 
 export { default as Footer } from './Footer'
+
+export { default as Pill } from './Pill'
+export type { PillProps } from './Pill'
+
+export { default as TickerTape } from './TickerTape'
+export type { TickerTapeProps } from './TickerTape'
+export { LogoPlaceholder } from './TickerTape'

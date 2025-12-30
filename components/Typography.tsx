@@ -39,17 +39,17 @@ export interface TypographyProps {
 
 const variantStyles: Record<TypographyVariant, string> = {
   'heading-1':
-    '[font-family:var(--font-heading)] font-medium text-4xl md:text-5xl leading-[1.15] tracking-[0.02em] text-foreground-dark',
+    '[font-family:var(--font-heading)] font-medium text-4xl md:text-[64px] leading-tight tracking-tight text-foreground-dark',
   'heading-2':
-    '[font-family:var(--font-heading)] font-medium text-3xl md:text-4xl leading-[1.15] tracking-[0.02em] text-foreground-dark',
+    '[font-family:var(--font-heading)] font-medium text-3xl md:text-[48px] leading-tight tracking-tight text-foreground-dark',
   'heading-3':
-    '[font-family:var(--font-heading)] font-normal text-2xl md:text-3xl leading-[1.15] tracking-[0.02em] text-foreground-dark',
+    '[font-family:var(--font-heading)] font-normal text-2xl md:text-[40px] leading-tight tracking-tight text-foreground-dark',
   'heading-4':
-    '[font-family:var(--font-heading)] font-normal text-xl md:text-2xl leading-[1.15] tracking-[0.02em] text-foreground-dark',
+    '[font-family:var(--font-heading)] font-normal text-xl md:text-[32px] leading-tight tracking-tight text-foreground-dark',
   'heading-5':
-    '[font-family:var(--font-heading)] font-normal text-lg md:text-xl leading-[1.15] tracking-[0.02em] text-foreground-dark',
+    '[font-family:var(--font-heading)] font-normal text-lg md:text-[24px] leading-tight tracking-tight text-foreground-dark',
   'heading-6':
-    '[font-family:var(--font-heading)] font-normal text-base md:text-lg leading-[1.15] tracking-[0.02em] text-foreground-dark',
+    '[font-family:var(--font-heading)] font-normal text-base md:text-[20px] leading-tight tracking-tight text-foreground-dark',
   body: '[font-family:var(--font-body)] text-base leading-[1.65] text-foreground-dark',
   'body-large':
     '[font-family:var(--font-body)] text-lg leading-[1.65] text-foreground-dark',
