@@ -57,9 +57,9 @@ export default function AboutSection() {
                   together feels like the right fit.
                 </Typography>
               </div>
-              <div>
+              <div className="mx-auto md:mx-0">
                 <Button variant="primary" size="md" href="/contact">
-                  Schedule a Consultation
+                  Start a Conversation
                 </Button>
               </div>
             </div>

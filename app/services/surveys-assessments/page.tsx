@@ -1,0 +1,24 @@
+import ExecutiveCoachingHero from '../_components/ExecutiveCoachingHero'
+import WhenUsefulSection from '../_components/WhenUsefulSection'
+import WhatWorkFeelsLikeSection from '../_components/WhatWorkFeelsLikeSection'
+import CoachingApproachSection from '../_components/CoachingApproachSection'
+import OutcomesSection from '../_components/OutcomesSection'
+import WhoThisIsForSection from '../_components/WhoThisIsForSection'
+import AboutCharleneSection from '../_components/AboutCharleneSection'
+import { surveysAssessmentsData } from './data'
+
+export default function SurveysAssessmentsPage() {
+  return (
+    <>
+      <ExecutiveCoachingHero data={surveysAssessmentsData.hero} />
+      <WhenUsefulSection data={surveysAssessmentsData.whenUseful} />
+      <WhatWorkFeelsLikeSection
+        data={surveysAssessmentsData.whatWorkFeelsLike}
+      />
+      <CoachingApproachSection data={surveysAssessmentsData.coachingApproach} />
+      <OutcomesSection data={surveysAssessmentsData.outcomes} />
+      <WhoThisIsForSection data={surveysAssessmentsData.whoThisIsFor} />
+      <AboutCharleneSection data={surveysAssessmentsData.aboutCharlene} />
+    </>
+  )
+}

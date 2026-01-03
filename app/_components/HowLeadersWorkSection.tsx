@@ -90,7 +90,7 @@ export default function HowLeadersWorkSection() {
           viewport={{ once: true, margin: '-100px' }}
           transition={{ duration: 0.6, ease: 'easeOut', delay: 0.5 }}
         >
-          <Button variant="primary" size="md" href="/what-we-do">
+          <Button variant="primary" size="md" href="/services">
             Explore What We Do
           </Button>
         </motion.div>

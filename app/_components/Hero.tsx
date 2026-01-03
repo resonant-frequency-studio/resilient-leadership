@@ -53,12 +53,12 @@ export default function Hero() {
               transition={{ duration: 1, ease: 'easeOut', delay: 1.5 }}
             >
               <Button variant="primary" size="md" href="/contact">
-                Schedule a Consultation
+                Start a Conversation
               </Button>
               <Button
                 variant="outline"
                 size="md"
-                href="/what-we-do"
+                href="/services"
                 icon={<ArrowRight />}
                 iconPosition="right"
               >
