@@ -46,7 +46,10 @@ describe('Footer', () => {
     const executiveCoaching = screen
       .getByText('Executive Coaching')
       .closest('a')
-    expect(executiveCoaching).toHaveAttribute('href', '/executive-coaching')
+    expect(executiveCoaching).toHaveAttribute(
+      'href',
+      '/services/executive-coaching'
+    )
   })
 
   it('navigation links have correct href attributes', () => {

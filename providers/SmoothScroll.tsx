@@ -16,6 +16,32 @@ export default function SmoothScroll() {
       // wheelMultiplier: 1,
     })
 
+    // Expose Lenis instance to window for anchor link handling
+    window.lenis = lenis
+
+    // Handle anchor links with smooth scroll
+    const handleAnchorClick = (e: MouseEvent) => {
+      const target = e.target as HTMLElement
+      const link = target.closest('a[href^="#"]') as HTMLAnchorElement
+      if (!link) return
+
+      const href = link.getAttribute('href')
+      if (!href || !href.startsWith('#')) return
+
+      const id = href.slice(1)
+      const element = document.getElementById(id)
+      if (!element) return
+
+      e.preventDefault()
+
+      lenis.scrollTo(element, {
+        offset: -100, // Account for sticky header
+        duration: 1.2,
+      })
+    }
+
+    document.addEventListener('click', handleAnchorClick)
+
     let rafId = 0
     const raf = (time: number) => {
       lenis.raf(time)
@@ -25,6 +51,8 @@ export default function SmoothScroll() {
 
     return () => {
       cancelAnimationFrame(rafId)
+      document.removeEventListener('click', handleAnchorClick)
+      delete window.lenis
       lenis.destroy()
     }
   }, [])
