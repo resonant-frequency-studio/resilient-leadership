@@ -67,8 +67,8 @@ export default function AboutSection() {
             {/* Right side - Image */}
             <div className="relative aspect-square md:aspect-auto md:h-full min-h-[300px]">
               <Image
-                src="/resilient-charlene-wilson.avif"
-                alt=""
+                src="/resilient-charlene-wilson.jpeg"
+                alt="Charlene Wilson"
                 fill
                 className="object-cover scale-x-[-1]"
               />
