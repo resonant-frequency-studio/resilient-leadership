@@ -63,8 +63,8 @@ export default function WhatWeDoHero() {
           >
             <div className="relative w-full aspect-square max-w-[600px] rounded-2xl overflow-hidden">
               <Image
-                src="/why-coaching-placeholder-2.webp"
-                alt="Leadership reflection"
+                src="/what-we-do-hero.webp"
+                alt="Man and woman talking"
                 fill
                 className="object-cover"
                 priority

@@ -74,10 +74,11 @@ export default function AboutCharleneSection() {
             {/* Right side - Image */}
             <div className="relative aspect-square md:aspect-auto md:h-full min-h-[300px]">
               <Image
-                src="/resilient-charlene-wilson.avif"
-                alt=""
+                src="/charlene-secondary.webp"
+                alt="Charlene Wilson"
                 fill
                 className="object-cover scale-x-[-1]"
+                style={{ objectPosition: 'center 30%' }}
               />
             </div>
           </div>

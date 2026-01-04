@@ -22,7 +22,7 @@ export default function AboutPage() {
       <TeamMemberSection
         name="Filaree Radich"
         title="Executive Coach and 360 Degree Feedback Specialist"
-        imageSrc="/resilient-filaree-radich.avif"
+        imageSrc="/resilient-filaree-radich.jpeg"
         imageAlt="Filaree Radich"
         paragraphs={[
           'Filaree brings over 15 years of experience supporting leaders through executive coaching and interview based 360 feedback. Her work is grounded in compassion, rigor, and a deep respect for the complexity of leadership.',
@@ -37,7 +37,7 @@ export default function AboutPage() {
       <TeamMemberSection
         name="Harriet Parsons"
         title="Certified Coach"
-        imageSrc="/resilient-harriet.avif"
+        imageSrc="/resilient-harriet.jpg"
         imageAlt="Harriet Parsons"
         paragraphs={[
           'Harriet is a Certified Coach trained by the Co Active Institute with a background that bridges corporate leadership, well being, and human development. She brings warmth, curiosity, and steadiness to her work, creating a safe space for exploration, creativity, and growth.',

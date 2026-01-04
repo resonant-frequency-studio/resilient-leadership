@@ -6,7 +6,7 @@ export const executiveCoachingData: ServicePageData = {
     title: 'When leadership carries weight',
     description:
       'Executive coaching creates space to slow down, think clearly, and work with what is shaping your leadership beneath the surface.',
-    imageSrc: '/why-coaching-placeholder-2.webp',
+    imageSrc: '/executive-coaching-hero.webp',
     imageAlt: 'Executive coaching',
     ctaText: 'Start a Conversation',
     ctaHref: '/contact',
@@ -62,7 +62,7 @@ export const executiveCoachingData: ServicePageData = {
           'Less reactivity. Clearer judgment. A steadiness that supports both results and well-being.',
       },
     ],
-    imageSrc: '/what-the-work-placeholder.webp',
+    imageSrc: '/executive-coaching-work.webp',
     imageAlt: '',
   },
   coachingApproach: {
@@ -127,7 +127,7 @@ export const executiveCoachingData: ServicePageData = {
     ],
     ctaText: 'Start a Conversation',
     ctaHref: '/contact',
-    imageSrc: '/resilient-charlene-wilson.avif',
+    imageSrc: '/charlene-secondary.webp',
     imageAlt: '',
   },
 }

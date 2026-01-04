@@ -72,7 +72,7 @@ export default function HeroSection() {
               transition={{ duration: 1, ease: 'easeOut' }}
             >
               <Image
-                src="/testimonial-placeholder.webp"
+                src="/about-hero.webp"
                 alt="About Resilient Leadership"
                 fill
                 className="object-cover"

@@ -8,7 +8,7 @@ export const customEngagementsData: ServicePageData = {
       'Some leadership challenges are too nuanced, complex, or context-specific for a predefined program. Custom engagements create space to design work that responds directly to the people involved, the dynamics at play, and the moment an organization is navigating.',
       'These engagements are intentionally shaped using executive coaching, team facilitation, leadership development, and 360° feedback. The work meets leaders and groups where they are and supports clarity, alignment, and practical progress that fits the reality they are facing.',
     ],
-    imageSrc: '/what-the-work-placeholder.webp',
+    imageSrc: '/engagements-hero.webp',
     imageAlt:
       'Facilitated leadership session in a custom organizational setting',
     ctaText: 'Start a Conversation',
@@ -65,7 +65,7 @@ export const customEngagementsData: ServicePageData = {
           'Insight turns into action. Conversations become more honest, focused, and productive. Leaders and teams leave with clarity, shared understanding, and concrete tools they can apply with confidence as conditions continue to evolve.',
       },
     ],
-    imageSrc: '/what-the-work-placeholder.webp',
+    imageSrc: '/engagements-work.webp',
     imageAlt: 'Custom engagements work',
   },
   coachingApproach: {
@@ -133,7 +133,7 @@ export const customEngagementsData: ServicePageData = {
     ],
     ctaText: 'Start a Conversation',
     ctaHref: '/contact',
-    imageSrc: '/resilient-charlene-wilson.avif',
+    imageSrc: '/charlene-secondary.webp',
     imageAlt: '',
   },
 }

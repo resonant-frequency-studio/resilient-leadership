@@ -1,3 +1,6 @@
+'use client'
+
+import { motion } from 'framer-motion'
 import Typography from '@/components/Typography'
 
 export default function PhilosophySection() {
@@ -5,10 +8,23 @@ export default function PhilosophySection() {
     <section className="py-16 md:py-24 bg-secondary">
       <div className="max-width-container">
         <div className="max-w-3xl mx-auto">
-          <Typography variant="heading-3" as="h2" className="mb-6">
-            Our approach
-          </Typography>
-          <div className="flex flex-col gap-4">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: '-100px' }}
+            transition={{ duration: 0.6, ease: 'easeOut', delay: 0.2 }}
+          >
+            <Typography variant="heading-3" as="h2" className="mb-6">
+              Our approach
+            </Typography>
+          </motion.div>
+          <motion.div
+            className="flex flex-col gap-4"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: '-100px' }}
+            transition={{ duration: 0.6, ease: 'easeOut', delay: 0.4 }}
+          >
             <Typography
               variant="body"
               as="p"
@@ -37,7 +53,7 @@ export default function PhilosophySection() {
               clarity, presence, and leadership that holds under real
               conditions.
             </Typography>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

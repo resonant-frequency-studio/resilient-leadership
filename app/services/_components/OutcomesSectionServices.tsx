@@ -37,8 +37,8 @@ export default function OutcomesSection() {
           >
             <div className="relative w-full aspect-square rounded-2xl overflow-hidden">
               <Image
-                src="/what-the-work-placeholder.webp"
-                alt=""
+                src="/what-we-do-outcome.webp"
+                alt="Three people sitting and talking"
                 fill
                 className="object-cover"
               />

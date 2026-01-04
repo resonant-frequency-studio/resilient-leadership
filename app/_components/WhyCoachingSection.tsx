@@ -7,19 +7,19 @@ import Pill from '@/components/Pill'
 
 const benefits = [
   {
-    image: '/why-coaching-placeholder-1.webp',
+    image: '/coaching-confidence-01.webp',
     text: 'Greater confidence in complex decision-making',
   },
   {
-    image: '/why-coaching-placeholder-2.webp',
+    image: '/coaching-presence-01.webp',
     text: 'Stronger presence and trust in conversations that matter',
   },
   {
-    image: '/why-coaching-placeholder-3.webp',
+    image: '/coaching-alignment-01.webp',
     text: 'Alignment between values, actions, and leadership impact',
   },
   {
-    image: '/why-coaching-placeholder-4.webp',
+    image: '/coaching-steadiness-01.webp',
     text: 'A steadiness that supports both performance and well-being',
   },
 ]

@@ -6,7 +6,7 @@ export const teamCoachingData: ServicePageData = {
     title: 'When teams need steadiness',
     description:
       'Team coaching supports leadership teams when collaboration, trust, and alignment matter most. It creates space to slow patterns, address what gets in the way, and work together with greater clarity and confidence.',
-    imageSrc: '/testimonials-placeholder.webp',
+    imageSrc: '/team-coaching-hero.webp',
     imageAlt: 'Team coaching',
     ctaText: 'Start a Conversation',
     ctaHref: '/contact',
@@ -64,7 +64,7 @@ export const teamCoachingData: ServicePageData = {
           'Conversations become more direct. Accountability becomes collective. The team develops a steadiness that supports performance, morale, and follow-through.',
       },
     ],
-    imageSrc: '/what-the-work-placeholder.webp',
+    imageSrc: '/team-coaching-work.webp',
     imageAlt: 'Team coaching work',
   },
   coachingApproach: {
@@ -126,7 +126,7 @@ export const teamCoachingData: ServicePageData = {
     ],
     ctaText: 'Start a Conversation',
     ctaHref: '/contact',
-    imageSrc: '/resilient-charlene-wilson.avif',
+    imageSrc: '/charlene-secondary.webp',
     imageAlt: '',
   },
 }

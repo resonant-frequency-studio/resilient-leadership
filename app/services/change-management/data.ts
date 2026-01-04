@@ -8,7 +8,7 @@ export const changeManagementData: ServicePageData = {
       'Change management becomes essential when growth, transition, or uncertainty begin to strain people as much as systems.',
       'This work creates the conditions for change to be understood, supported, and carried forward by those responsible for making it real.',
     ],
-    imageSrc: '/what-the-work-placeholder.webp',
+    imageSrc: '/change-hero.webp',
     imageAlt: 'Change management collaboration',
     ctaText: 'Start a Conversation',
     ctaHref: '/contact',
@@ -69,7 +69,7 @@ export const changeManagementData: ServicePageData = {
           'Trust strengthens across teams. People understand what is changing, why it matters, and what is expected of them. Momentum builds in a way that feels steady, supported, and sustainable.',
       },
     ],
-    imageSrc: '/what-the-work-placeholder.webp',
+    imageSrc: '/change-work.webp',
     imageAlt: 'Change management work',
   },
   coachingApproach: {
@@ -132,7 +132,7 @@ export const changeManagementData: ServicePageData = {
     ],
     ctaText: 'Start a Conversation',
     ctaHref: '/contact',
-    imageSrc: '/resilient-charlene-wilson.avif',
+    imageSrc: '/charlene-secondary.webp',
     imageAlt: '',
   },
 }

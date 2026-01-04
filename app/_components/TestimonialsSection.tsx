@@ -7,12 +7,16 @@ import Pill from '@/components/Pill'
 
 const testimonials = [
   {
+    image: '/testimonial-placeholder.webp', // @TODO: Add Nate Breed image
+    alt: 'Nate Breed',
     quote:
       'Before meeting Charlene, I lived in a perpetual state of self-imposed high expectation and self-criticism. The ability to live in the moment was beyond me. She helped me realize that significant events from my past shaped how I deal with life today.\n\nI am now able to identify the tendencies that cause me to be overly critical of myself… My approach to both work and home life has improved tremendously.',
     name: 'Nate Breed',
     title: 'VP of Finance',
   },
   {
+    image: '/chad-henline.webp',
+    alt: 'Chad Henline',
     quote:
       'My coaching with Charlene has changed my life personally, professionally and socially.\n\nI was traveling through life with unrealistic expectations and carrying a sense of failure. Charlene has an incredible way of holding me accountable with honesty and connecting me with what really matters.',
     name: 'Chad Henline',
@@ -60,8 +64,8 @@ export default function TestimonialsSection() {
           >
             <div className="relative w-full h-full">
               <Image
-                src="/testimonials-placeholder.webp"
-                alt=""
+                src="/testimonials-01.webp"
+                alt="Coworkers discussing a project"
                 fill
                 className="object-cover object-center"
               />
@@ -108,8 +112,8 @@ export default function TestimonialsSection() {
                 {/* Image - square with rounded corners */}
                 <div className="relative size-20 rounded-lg overflow-hidden shrink-0">
                   <Image
-                    src="/testimonial-placeholder.webp"
-                    alt=""
+                    src={testimonial.image}
+                    alt={testimonial.alt}
                     fill
                     className="object-cover object-center"
                   />

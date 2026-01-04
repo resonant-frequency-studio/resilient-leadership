@@ -8,7 +8,7 @@ export const threeSixtyFeedbackData: ServicePageData = {
       '360° feedback creates a grounded, well-rounded view of how your leadership is experienced by others. It brings clarity to strengths you can rely on and surfaces blind spots that quietly shape outcomes, relationships, and trust.',
       'This work supports leaders who want accurate, usable insight. Not evaluation for its own sake, but feedback that leads to wiser decisions, stronger presence, and meaningful development.',
     ],
-    imageSrc: '/what-the-work-placeholder.webp',
+    imageSrc: '/360-hero.webp',
     imageAlt: '360° feedback',
     ctaText: 'Start a Conversation',
     ctaHref: '/contact',
@@ -65,7 +65,7 @@ export const threeSixtyFeedbackData: ServicePageData = {
           'Leaders gain confidence in what to lean into and clarity about where to focus development. Decisions feel steadier. Growth becomes intentional rather than reactive.',
       },
     ],
-    imageSrc: '/what-the-work-placeholder.webp',
+    imageSrc: '/360-work.webp',
     imageAlt: '360° feedback work',
   },
   coachingApproach: {
@@ -130,7 +130,7 @@ export const threeSixtyFeedbackData: ServicePageData = {
     ],
     ctaText: 'Start a Conversation',
     ctaHref: '/contact',
-    imageSrc: '/resilient-charlene-wilson.avif',
+    imageSrc: '/charlene-secondary.webp',
     imageAlt: '',
   },
 }

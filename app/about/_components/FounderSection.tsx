@@ -1,4 +1,7 @@
+'use client'
+
 import Image from 'next/image'
+import { motion } from 'framer-motion'
 import Typography from '@/components/Typography'
 import SocialLinks from '@/components/SocialLinks'
 
@@ -8,17 +11,29 @@ export default function FounderSection() {
       <div className="max-width-container px-8 md:px-16 lg:px-24">
         <div className="flex flex-col lg:flex-row gap-12 md:gap-16 lg:gap-24 items-center">
           {/* Left Column - Portrait */}
-          <div className="relative aspect-3/4 w-full lg:w-[40%] mx-auto lg:mx-0">
+          <motion.div
+            className="relative aspect-3/4 w-full lg:w-[40%] mx-auto lg:mx-0"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: '-100px' }}
+            transition={{ duration: 0.6, ease: 'easeOut', delay: 0.3 }}
+          >
             <Image
-              src="/resilient-charlene-wilson.avif"
+              src="/charlene-secondary.webp"
               alt="Charlene Wilson"
               fill
               className="object-cover rounded-2xl"
             />
-          </div>
+          </motion.div>
 
           {/* Right Column - Content */}
-          <div className="flex flex-col gap-6 w-full lg:w-[60%]">
+          <motion.div
+            className="flex flex-col gap-6 w-full lg:w-[60%]"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: '-100px' }}
+            transition={{ duration: 0.6, ease: 'easeOut', delay: 0.5 }}
+          >
             <div>
               <Typography variant="heading-2" as="h2" className="mb-2">
                 Charlene Wilson
@@ -78,14 +93,20 @@ export default function FounderSection() {
             </div>
 
             {/* Pull Quote */}
-            <div className="bg-secondary rounded-2xl p-6 md:p-8 mt-4">
+            <motion.div
+              className="bg-secondary rounded-2xl p-6 md:p-8 mt-4"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: '-100px' }}
+              transition={{ duration: 0.6, ease: 'easeOut', delay: 0.7 }}
+            >
               <Typography variant="quote" as="blockquote" className="mb-4">
                 I believe deeply in the power of coaching and the change it can
                 bring. There is a deeper, wiser part of ourselves waiting to
                 emerge. Coaching creates the space to hear that call and the
                 skills to know what to do next.
               </Typography>
-            </div>
+            </motion.div>
 
             {/* Social Links */}
             <SocialLinks
@@ -95,7 +116,7 @@ export default function FounderSection() {
               youtube="https://www.youtube.com/@resilientleadership"
               className="mt-2"
             />
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

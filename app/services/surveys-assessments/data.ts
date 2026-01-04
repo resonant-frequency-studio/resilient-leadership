@@ -8,7 +8,7 @@ export const surveysAssessmentsData: ServicePageData = {
       'Surveys and assessments provide a clear, grounded view of how your organization is actually functioning. They surface patterns across people, processes, and systems that are difficult to see from inside day-to-day operations.',
       'This work supports leaders who want accurate insight they can act on. Not data for its own sake, but understanding that reveals where gaps exist and how to address them effectively.',
     ],
-    imageSrc: '/what-the-work-placeholder.webp',
+    imageSrc: '/surveys-hero.webp',
     imageAlt: 'Organizational survey and assessment work',
     ctaText: 'Start a Conversation',
     ctaHref: '/contact',
@@ -64,7 +64,7 @@ export const surveysAssessmentsData: ServicePageData = {
           'Decisions feel more confident and grounded. Priorities become clearer. Action is guided by insight rather than assumption, supporting steadier progress, healthier dynamics, and more effective execution.',
       },
     ],
-    imageSrc: '/what-the-work-placeholder.webp',
+    imageSrc: '/surveys-work.webp',
     imageAlt: 'Surveys and assessments work',
   },
   coachingApproach: {
@@ -132,7 +132,7 @@ export const surveysAssessmentsData: ServicePageData = {
     ],
     ctaText: 'Start a Conversation',
     ctaHref: '/contact',
-    imageSrc: '/resilient-charlene-wilson.avif',
+    imageSrc: '/charlene-secondary.webp',
     imageAlt: '',
   },
 }

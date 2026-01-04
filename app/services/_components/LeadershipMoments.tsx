@@ -174,25 +174,25 @@ const moments = [
     title: 'When leadership feels heavy',
     description:
       'You are carrying responsibility that affects people, outcomes, and direction, often without space to pause.',
-    image: '/why-coaching-placeholder-1.webp',
+    image: '/what-we-do-leadership-01.webp',
   },
   {
     title: 'When conversations carry weight',
     description:
       'You are navigating tension or accountability and want to communicate clearly without overexplaining or retreating.',
-    image: '/why-coaching-placeholder-2.webp',
+    image: '/what-we-do-conversations-01.webp',
   },
   {
     title: 'When a team needs steadiness',
     description:
       'Priorities have shifted or trust feels uneven, and how leaders show up together matters more than ever.',
-    image: '/why-coaching-placeholder-3.webp',
+    image: '/what-we-do-steadiness-01.webp',
   },
   {
     title: 'When change outpaces capacity',
     description:
       'The organization is evolving, but the people side needs attention if the change is going to hold.',
-    image: '/why-coaching-placeholder-4.webp',
+    image: '/what-we-do-change-outpaces-01.webp',
   },
 ]
 
