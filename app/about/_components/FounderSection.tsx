@@ -23,6 +23,7 @@ export default function FounderSection() {
               alt="Charlene Wilson"
               fill
               className="object-cover rounded-2xl"
+              style={{ objectPosition: 'center 30%' }}
             />
           </motion.div>
 

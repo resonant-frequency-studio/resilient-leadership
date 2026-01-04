@@ -77,6 +77,7 @@ export default function AboutCharleneSection({
                 alt={data.imageAlt}
                 fill
                 className="object-cover scale-x-[-1]"
+                style={{ objectPosition: 'center 30%' }}
               />
             </div>
           </div>
