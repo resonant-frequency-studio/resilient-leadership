@@ -13,7 +13,7 @@ interface ServiceHeroProps {
 
 export default function ServiceHero({ data }: ServiceHeroProps) {
   return (
-    <section className="py-16 md:py-32">
+    <section className="pt-32 pb-16 md:py-32">
       <div className="max-width-container">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-16 items-center">
           {/* Left side - Text content */}

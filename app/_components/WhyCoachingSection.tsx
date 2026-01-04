@@ -92,7 +92,7 @@ export default function WhyCoachingSection() {
                   />
                   {/* Frosted glass text overlay at bottom */}
                   <div className="absolute bottom-0 left-0 right-0 p-4">
-                    <div className="bg-white/10 backdrop-blur-md rounded-xl p-3 min-h-[80px] flex items-center">
+                    <div className="bg-black/10 backdrop-blur-md rounded-xl p-3 min-h-[80px] flex items-center">
                       <Typography variant="body-light" as="p">
                         {benefit.text}
                       </Typography>

@@ -252,7 +252,7 @@ export default function CoachingApproachSection({
                         className="absolute inset-0"
                         style={{
                           backgroundColor:
-                            'color-mix(in srgb, #191818 32%, transparent)',
+                            'color-mix(in srgb, #191818 40%, transparent)',
                         }}
                       />
                     </div>
