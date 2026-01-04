@@ -93,11 +93,11 @@ const Header = () => {
           <div className="shrink-0">
             <Link href="/" className="flex items-center">
               <Image
-                src="/resilient-leadership.png"
+                src="/resilient-leadership-dark.png"
                 alt="Resilient Leadership"
                 width={200}
                 height={60}
-                className="h-12 w-auto invert"
+                className="h-18 w-auto"
                 priority
               />
             </Link>
@@ -162,11 +162,11 @@ const Header = () => {
               onClick={handleNavLinkClick}
             >
               <Image
-                src="/resilient-leadership.png"
+                src="/resilient-leadership-dark.png"
                 alt="Resilient Leadership"
                 width={200}
                 height={60}
-                className="h-10 w-auto invert"
+                className="h-16 w-auto"
                 priority
               />
             </Link>

@@ -26,7 +26,7 @@ const Textarea = React.forwardRef<HTMLTextAreaElement, TextareaProps>(
           id={textareaId}
           className={cn(
             'w-full px-4 py-3 rounded-lg',
-            'bg-input text-foreground-dark',
+            'bg-input-bg text-foreground-dark',
             'border border-transparent',
             'placeholder:text-placeholder',
             'resize-y min-h-[120px]',

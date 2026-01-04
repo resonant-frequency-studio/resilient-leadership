@@ -11,7 +11,7 @@ interface WhenUsefulSectionProps {
 
 export default function WhenUsefulSection({ data }: WhenUsefulSectionProps) {
   return (
-    <section className="py-16 md:py-[120px]">
+    <section className="py-16 md:py-32">
       <div className="max-width-container">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-16">
           {/* Left column - Heading + Framing copy */}

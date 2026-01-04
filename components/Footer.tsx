@@ -157,14 +157,28 @@ const Footer = () => {
             </Typography>
             <ul className="space-y-3">
               <li>
-                <a
-                  href="https://www.iubenda.com/privacy-policy/83253436"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <Link
+                  href="/privacy"
                   className="text-foreground-light/80 hover:text-foreground-light transition-colors text-sm"
                 >
                   Privacy Policy
-                </a>
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/cookies"
+                  className="text-foreground-light/80 hover:text-foreground-light transition-colors text-sm"
+                >
+                  Cookie Policy
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/terms"
+                  className="text-foreground-light/80 hover:text-foreground-light transition-colors text-sm"
+                >
+                  Terms of Service
+                </Link>
               </li>
             </ul>
           </div>

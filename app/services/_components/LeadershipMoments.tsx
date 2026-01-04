@@ -204,7 +204,7 @@ export default function LeadershipMoments() {
   })
 
   return (
-    <section ref={sectionRef} className="py-16 md:py-[120px]">
+    <section ref={sectionRef} className="py-16 md:py-32">
       <div className="max-width-container">
         <motion.div
           className="flex flex-col gap-8 md:gap-12 mb-16 md:mb-24"

@@ -13,7 +13,7 @@ export default function WhoThisIsForSection({
   data,
 }: WhoThisIsForSectionProps) {
   return (
-    <section className="py-16 md:py-[120px]">
+    <section className="py-16 md:py-32">
       <div className="max-width-container">
         <motion.div
           className="flex flex-col gap-4 mb-8 md:mb-12"

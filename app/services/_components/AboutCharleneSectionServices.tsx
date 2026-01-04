@@ -7,7 +7,7 @@ import Button from '@/components/Button'
 
 export default function AboutCharleneSection() {
   return (
-    <section className="relative py-16 md:py-[120px] overflow-hidden">
+    <section className="relative py-16 md:py-32 overflow-hidden">
       {/* Background image with overlay */}
       <div className="absolute inset-0 z-0">
         <Image

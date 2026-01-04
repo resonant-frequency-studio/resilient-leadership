@@ -300,20 +300,20 @@ export default function BookCallForm() {
       <Typography
         variant="body-small"
         as="p"
-        className="text-foreground-dark/70 -mt-2"
+        className="text-foreground-dark/70"
       >
         * Required fields
       </Typography>
-
-      <Button
-        type="submit"
-        variant="primary"
-        size="lg"
-        disabled={isSubmitting || !isFormValid()}
-        className="w-full"
-      >
-        {isSubmitting ? 'Submitting...' : 'Start a Conversation'}
-      </Button>
+      <div className="flex justify-end">
+        <Button
+          type="submit"
+          variant="primary"
+          size="lg"
+          disabled={isSubmitting || !isFormValid()}
+        >
+          {isSubmitting ? 'Submitting...' : 'Submit'}
+        </Button>
+      </div>
     </form>
   )
 }

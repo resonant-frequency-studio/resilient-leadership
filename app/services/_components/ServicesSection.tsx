@@ -66,7 +66,7 @@ const services = [
 
 export default function ServicesSection() {
   return (
-    <section id="services" className="bg-secondary py-16 md:py-[120px]">
+    <section id="services" className="bg-secondary py-16 md:py-32">
       <div className="max-width-container">
         {/* Headline and eyebrow */}
         <motion.div

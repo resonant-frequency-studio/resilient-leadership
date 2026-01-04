@@ -1,9 +1,16 @@
+import type { Metadata } from 'next'
 import HeroSection from './_components/HeroSection'
 import PhilosophySection from './_components/PhilosophySection'
 import FounderSection from './_components/FounderSection'
 import TeamIntroSection from './_components/TeamIntroSection'
 import TeamMemberSection from './_components/TeamMemberSection'
 import ClosingSection from './_components/ClosingSection'
+
+export const metadata: Metadata = {
+  title: 'About Us | Resilient Leadership',
+  description:
+    'Learn about Resilient Leadership, our team, philosophy, and approach to executive coaching and leadership development. Meet Charlene Wilson and our experienced coaches.',
+}
 
 export default function AboutPage() {
   return (

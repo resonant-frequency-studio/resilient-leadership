@@ -1,3 +1,4 @@
+import type { Metadata } from 'next'
 import ExecutiveCoachingHero from '../_components/ExecutiveCoachingHero'
 import WhenUsefulSection from '../_components/WhenUsefulSection'
 import WhatWorkFeelsLikeSection from '../_components/WhatWorkFeelsLikeSection'
@@ -6,6 +7,12 @@ import OutcomesSection from '../_components/OutcomesSection'
 import WhoThisIsForSection from '../_components/WhoThisIsForSection'
 import AboutCharleneSection from '../_components/AboutCharleneSection'
 import { customEngagementsData } from './data'
+
+export const metadata: Metadata = {
+  title: 'Custom Engagements | Resilient Leadership',
+  description:
+    'Custom leadership development engagements tailored to your unique organizational context. Flexible, responsive coaching and facilitation for complex leadership challenges.',
+}
 
 export default function CustomEngagementsPage() {
   return (

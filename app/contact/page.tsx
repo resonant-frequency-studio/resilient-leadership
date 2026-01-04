@@ -1,6 +1,13 @@
+import type { Metadata } from 'next'
 import Typography from '@/components/Typography'
 import BookCallForm from '@/components/BookCallForm'
 import { Pill } from '@/components'
+
+export const metadata: Metadata = {
+  title: 'Contact Us | Resilient Leadership',
+  description:
+    'Schedule a confidential 45-minute conversation to explore whether coaching, facilitation, or leadership support is right for you. No obligation required.',
+}
 
 export default function ContactPage() {
   return (
@@ -10,7 +17,7 @@ export default function ContactPage() {
           {/* Left Column */}
           <div className="flex flex-col gap-8 md:gap-12">
             {/* Label */}
-            <Pill>Start a Conversation</Pill>
+            <Pill>Contact Us</Pill>
 
             {/* Main Heading */}
             <Typography variant="heading-2" as="h2">
@@ -94,7 +101,7 @@ export default function ContactPage() {
           </div>
 
           {/* Right Column - Form */}
-          <div className="flex flex-col gap-6 bg-secondary rounded-2xl p-6 md:p-8">
+          <div className="flex flex-col gap-6 bg-secondary rounded-2xl p-6">
             <Typography
               variant="body"
               as="p"
