@@ -2,7 +2,6 @@ import type { Metadata } from 'next'
 import { Cormorant_Garamond, Inter } from 'next/font/google'
 import './globals.css'
 import SmoothScrollProvider from '@/providers/SmoothScrollProvider'
-import ReCaptchaProvider from '@/providers/ReCaptchaProvider'
 import { Footer, Header } from '@/components'
 
 const cormorantGaramond = Cormorant_Garamond({
@@ -37,12 +36,10 @@ export default function RootLayout({
       className={`${cormorantGaramond.variable} ${inter.variable}`}
     >
       <body className={inter.className}>
-        <ReCaptchaProvider>
-          <SmoothScrollProvider />
-          <Header />
-          <main className="min-h-screen bg-main">{children}</main>
-          <Footer />
-        </ReCaptchaProvider>
+        <SmoothScrollProvider />
+        <Header />
+        <main className="min-h-screen bg-main">{children}</main>
+        <Footer />
       </body>
     </html>
   )
