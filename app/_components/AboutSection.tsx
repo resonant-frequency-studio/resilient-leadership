@@ -57,9 +57,9 @@ export default function AboutSection() {
                   together feels like the right fit.
                 </Typography>
               </div>
-              <div>
+              <div className="mx-auto md:mx-0">
                 <Button variant="primary" size="md" href="/contact">
-                  Schedule a Consultation
+                  Start a Conversation
                 </Button>
               </div>
             </div>
@@ -67,10 +67,11 @@ export default function AboutSection() {
             {/* Right side - Image */}
             <div className="relative aspect-square md:aspect-auto md:h-full min-h-[300px]">
               <Image
-                src="/resilient-charlene-wilson.avif"
-                alt=""
+                src="/charlene-secondary.webp"
+                alt="Charlene Wilson"
                 fill
                 className="object-cover scale-x-[-1]"
+                style={{ objectPosition: 'center 30%' }}
               />
             </div>
           </div>

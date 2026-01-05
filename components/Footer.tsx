@@ -52,7 +52,7 @@ const Footer = () => {
             <ul className="space-y-3">
               <li>
                 <Link
-                  href="/executive-coaching"
+                  href="/services/executive-coaching"
                   className="text-foreground-light/80 hover:text-foreground-light transition-colors text-sm"
                 >
                   Executive Coaching
@@ -60,7 +60,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  href="/team-coaching"
+                  href="/services/team-coaching"
                   className="text-foreground-light/80 hover:text-foreground-light transition-colors text-sm"
                 >
                   Team Coaching
@@ -68,7 +68,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  href="/organization-development"
+                  href="/services/change-management"
                   className="text-foreground-light/80 hover:text-foreground-light transition-colors text-sm"
                 >
                   Change Management
@@ -76,7 +76,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  href="/360-feedback"
+                  href="/services/360-feedback"
                   className="text-foreground-light/80 hover:text-foreground-light transition-colors text-sm"
                 >
                   360˚ Feedback
@@ -84,10 +84,18 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  href="/surveys-assessments"
+                  href="/services/surveys-assessments"
                   className="text-foreground-light/80 hover:text-foreground-light transition-colors text-sm"
                 >
                   Surveys and Assessments
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/services/custom-engagements"
+                  className="text-foreground-light/80 hover:text-foreground-light transition-colors text-sm"
+                >
+                  Custom Engagements
                 </Link>
               </li>
             </ul>
@@ -149,14 +157,28 @@ const Footer = () => {
             </Typography>
             <ul className="space-y-3">
               <li>
-                <a
-                  href="https://www.iubenda.com/privacy-policy/83253436"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <Link
+                  href="/privacy"
                   className="text-foreground-light/80 hover:text-foreground-light transition-colors text-sm"
                 >
                   Privacy Policy
-                </a>
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/cookies"
+                  className="text-foreground-light/80 hover:text-foreground-light transition-colors text-sm"
+                >
+                  Cookie Policy
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/terms"
+                  className="text-foreground-light/80 hover:text-foreground-light transition-colors text-sm"
+                >
+                  Terms of Service
+                </Link>
               </li>
             </ul>
           </div>

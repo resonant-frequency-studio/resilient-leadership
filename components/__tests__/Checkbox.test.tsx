@@ -120,7 +120,7 @@ describe('Checkbox', () => {
     const svg = container.querySelector('svg')
     expect(svg).toBeInTheDocument()
     // Check that the SVG has the classes for showing when checked
-    expect(svg).toHaveClass('opacity-0', 'peer-checked:opacity-100')
+    expect(svg).toHaveClass('opacity-100', 'scale-100')
   })
 
   it('hides checkmark icon when unchecked', () => {
@@ -152,8 +152,8 @@ describe('Checkbox', () => {
   it('has proper focus styles', () => {
     const { container } = render(<Checkbox />)
     const visualBox = container.querySelector('div[aria-hidden="true"]')
-    // The visual box should have peer-focus styles
-    expect(visualBox).toHaveClass('peer-focus:ring-2')
+    // The visual box should have focus-within styles
+    expect(visualBox).toHaveClass('focus-within:ring-2')
   })
 
   it('accepts all standard checkbox attributes', () => {

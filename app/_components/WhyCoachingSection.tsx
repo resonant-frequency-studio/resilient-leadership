@@ -7,19 +7,19 @@ import Pill from '@/components/Pill'
 
 const benefits = [
   {
-    image: '/why-coaching-placeholder-1.webp',
+    image: '/coaching-confidence-01.webp',
     text: 'Greater confidence in complex decision-making',
   },
   {
-    image: '/why-coaching-placeholder-2.webp',
+    image: '/coaching-presence-01.webp',
     text: 'Stronger presence and trust in conversations that matter',
   },
   {
-    image: '/why-coaching-placeholder-3.webp',
+    image: '/coaching-alignment-01.webp',
     text: 'Alignment between values, actions, and leadership impact',
   },
   {
-    image: '/why-coaching-placeholder-4.webp',
+    image: '/coaching-steadiness-01.webp',
     text: 'A steadiness that supports both performance and well-being',
   },
 ]
@@ -92,7 +92,7 @@ export default function WhyCoachingSection() {
                   />
                   {/* Frosted glass text overlay at bottom */}
                   <div className="absolute bottom-0 left-0 right-0 p-4">
-                    <div className="bg-white/10 backdrop-blur-md rounded-xl p-3 min-h-[80px] flex items-center">
+                    <div className="bg-black/10 backdrop-blur-md rounded-xl p-3 min-h-[80px] flex items-center">
                       <Typography variant="body-light" as="p">
                         {benefit.text}
                       </Typography>

@@ -5,12 +5,34 @@ import { motion } from 'framer-motion'
 import Button from '@/components/Button'
 import Typography from '@/components/Typography'
 import Pill from '@/components/Pill'
-import TickerTape, { LogoPlaceholder } from '@/components/TickerTape'
+import TickerTape from '@/components/TickerTape'
 import { ArrowRight } from '@/components/icons/ArrowRight'
 
+const clientLogos = [
+  '/logos/Capital_One_logo.svg',
+  '/logos/Google_2015_logo.svg',
+  '/logos/NASA_Worm_logo.svg',
+  '/logos/GeneDx_logo.svg',
+  '/logos/NVTA_BIG.svg',
+  '/logos/heron-foundation.svg',
+]
+
 export default function Hero() {
-  // Placeholder logos - replace with actual logo components later
-  const logos = Array.from({ length: 8 }, (_, i) => <LogoPlaceholder key={i} />)
+  const logos = clientLogos.map((logoPath, index) => (
+    <div
+      key={index}
+      className="flex items-center justify-center h-12 px-4 opacity-60 hover:opacity-100 transition-opacity"
+    >
+      <Image
+        src={logoPath}
+        alt=""
+        width={120}
+        height={48}
+        className="h-full w-auto object-contain filter grayscale hover:grayscale-0 transition-all"
+        style={{ maxWidth: '150px' }}
+      />
+    </div>
+  ))
 
   return (
     <section className="pt-32 pb-16 md:py-32">
@@ -53,12 +75,12 @@ export default function Hero() {
               transition={{ duration: 1, ease: 'easeOut', delay: 1.5 }}
             >
               <Button variant="primary" size="md" href="/contact">
-                Schedule a Consultation
+                Start a Conversation
               </Button>
               <Button
                 variant="outline"
                 size="md"
-                href="/what-we-do"
+                href="/services"
                 icon={<ArrowRight />}
                 iconPosition="right"
               >
@@ -77,8 +99,8 @@ export default function Hero() {
                 transition={{ duration: 1, ease: 'easeOut' }}
               >
                 <Image
-                  src="/hero-placeholder.webp"
-                  alt="Executive coaching"
+                  src="/charlene-primary.webp"
+                  alt="Charlene Wilson"
                   fill
                   className="object-cover"
                   priority

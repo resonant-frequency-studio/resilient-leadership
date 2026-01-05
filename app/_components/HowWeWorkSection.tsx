@@ -8,7 +8,7 @@ export default function HowWeWorkSection() {
   return (
     <section className="bg-main py-16 md:py-32">
       <div className="max-width-container">
-        <div className="grid grid-cols-1 lg:grid-cols-[1fr_2fr] gap-12 md:gap-16 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-16 items-center">
           {/* Left column - Image with mask (top on mobile) */}
           <div className="order-2 lg:order-1">
             <motion.div
@@ -19,7 +19,7 @@ export default function HowWeWorkSection() {
               transition={{ duration: 0.6, ease: 'easeOut', delay: 0.7 }}
             >
               <Image
-                src="/how-we-work-placeholder.jpg"
+                src="/how-work-02.webp"
                 alt="Team collaboration"
                 fill
                 className="object-cover brightness-[0.8] contrast-[1.1] saturate-[0.9]"

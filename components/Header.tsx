@@ -93,11 +93,11 @@ const Header = () => {
           <div className="shrink-0">
             <Link href="/" className="flex items-center">
               <Image
-                src="/resilient-leadership.png"
+                src="/resilient-leadership-dark.png"
                 alt="Resilient Leadership"
                 width={200}
                 height={60}
-                className="h-12 w-auto invert"
+                className="h-18 w-auto"
                 priority
               />
             </Link>
@@ -106,7 +106,7 @@ const Header = () => {
           {/* Navigation Links - Center */}
           <nav className="flex-1 flex items-center justify-center gap-8">
             <Link
-              href="/what-we-do"
+              href="/services"
               className="hover:text-button-primary transition-colors"
             >
               <Typography variant="nav" as="span">
@@ -134,7 +134,7 @@ const Header = () => {
           {/* CTA Button - Right */}
           <div className="shrink-0">
             <Button variant="primary" size="sm" href="/contact">
-              Schedule a Consultation
+              Start a Conversation
             </Button>
           </div>
         </div>
@@ -149,7 +149,7 @@ const Header = () => {
           md:hidden
         "
       >
-        <div className="mx-auto h-full px-4 flex items-center justify-between">
+        <div className="mx-auto h-full px-4 flex items-center">
           {/* Left: MenuButton and Logo */}
           <div className="flex items-center gap-3">
             <MenuButton
@@ -162,21 +162,14 @@ const Header = () => {
               onClick={handleNavLinkClick}
             >
               <Image
-                src="/resilient-leadership.png"
+                src="/resilient-leadership-dark.png"
                 alt="Resilient Leadership"
                 width={200}
                 height={60}
-                className="h-10 w-auto invert"
+                className="h-16 w-auto"
                 priority
               />
             </Link>
-          </div>
-
-          {/* Right: CTA Button */}
-          <div className="shrink-0">
-            <Button variant="primary" size="sm" href="/contact">
-              Schedule a Consultation
-            </Button>
           </div>
         </div>
       </header>
@@ -195,7 +188,7 @@ const Header = () => {
         <nav className="h-full flex flex-col pt-[90px] px-6">
           <div className="flex flex-col gap-6">
             <Link
-              href="/what-we-do"
+              href="/services"
               onClick={handleNavLinkClick}
               className="hover:text-button-primary transition-colors py-2"
             >
