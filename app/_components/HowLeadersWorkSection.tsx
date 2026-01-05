@@ -1,14 +1,13 @@
-'use client'
-
-import { motion } from 'framer-motion'
 import Typography from '@/components/Typography'
 import Button from '@/components/Button'
+import Motion from '@/components/Motion'
 
 export default function HowLeadersWorkSection() {
   return (
     <section className="bg-linear-to-b from-secondary to-main py-16 md:py-32">
       <div className="max-width-container">
-        <motion.div
+        <Motion
+          as="div"
           className="flex flex-col items-center text-center gap-8 md:gap-12 max-w-3xl mx-auto"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -24,13 +23,14 @@ export default function HowLeadersWorkSection() {
             the challenges you are navigating. Our work supports leaders and
             organizations at key moments of growth, transition, and change.
           </Typography>
-        </motion.div>
+        </Motion>
 
         {/* Services grid */}
         <div className="mt-16 md:mt-24">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
             {/* Executive Coaching */}
-            <motion.div
+            <Motion
+              as="div"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: '-100px' }}
@@ -44,10 +44,11 @@ export default function HowLeadersWorkSection() {
                 For leaders navigating complexity and responsibility who want
                 greater clarity, confidence, and steadiness in how they lead.
               </Typography>
-            </motion.div>
+            </Motion>
 
             {/* Team Coaching */}
-            <motion.div
+            <Motion
+              as="div"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: '-100px' }}
@@ -61,10 +62,11 @@ export default function HowLeadersWorkSection() {
                 For leadership teams and groups seeking stronger communication,
                 trust, and alignment as they work through growth or transition.
               </Typography>
-            </motion.div>
+            </Motion>
 
             {/* Organizational Development & Change */}
-            <motion.div
+            <Motion
+              as="div"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: '-100px' }}
@@ -78,12 +80,13 @@ export default function HowLeadersWorkSection() {
                 For organizations ready to build the leadership capacity,
                 systems, and practices needed to navigate meaningful change.
               </Typography>
-            </motion.div>
+            </Motion>
           </div>
         </div>
 
         {/* CTA Button */}
-        <motion.div
+        <Motion
+          as="div"
           className="mt-16 md:mt-24 flex justify-center"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -93,7 +96,7 @@ export default function HowLeadersWorkSection() {
           <Button variant="primary" size="md" href="/services">
             Explore What We Do
           </Button>
-        </motion.div>
+        </Motion>
       </div>
     </section>
   )

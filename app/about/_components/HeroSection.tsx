@@ -1,9 +1,7 @@
-'use client'
-
 import Image from 'next/image'
-import { motion } from 'framer-motion'
 import Typography from '@/components/Typography'
-import { Pill } from '@/components'
+import Pill from '@/components/Pill'
+import Motion from '@/components/Motion'
 
 export default function HeroSection() {
   return (
@@ -13,16 +11,18 @@ export default function HeroSection() {
           {/* Left side - Text content */}
           <div className="flex flex-col gap-8 md:gap-12">
             {/* Pill */}
-            <motion.div
+            <Motion
+              as="div"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, ease: 'easeOut', delay: 0.8 }}
             >
               <Pill>About Resilient Leadership</Pill>
-            </motion.div>
+            </Motion>
 
             {/* Main heading */}
-            <motion.div
+            <Motion
+              as="div"
               className="space-y-2 md:space-y-3 lg:mt-16"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -31,10 +31,11 @@ export default function HeroSection() {
               <Typography variant="heading-1" as="h1">
                 Grounded leadership begins with awareness
               </Typography>
-            </motion.div>
+            </Motion>
 
             {/* Description paragraphs */}
-            <motion.div
+            <Motion
+              as="div"
               className="flex flex-col gap-4"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -60,12 +61,13 @@ export default function HeroSection() {
                 lead with intention, steadiness, and impact in real world
                 conditions.
               </Typography>
-            </motion.div>
+            </Motion>
           </div>
 
           {/* Right side - Image */}
           <div className="flex justify-end">
-            <motion.div
+            <Motion
+              as="div"
               className="heroMask relative aspect-square overflow-hidden size-full mx-auto lg:mx-0"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
@@ -78,7 +80,7 @@ export default function HeroSection() {
                 className="object-cover"
                 priority
               />
-            </motion.div>
+            </Motion>
           </div>
         </div>
       </div>

@@ -1,8 +1,6 @@
-'use client'
-
-import { motion } from 'framer-motion'
 import Typography from '@/components/Typography'
 import Pill from '@/components/Pill'
+import Motion from '@/components/Motion'
 import { ServiceOutcomesData } from './types'
 
 interface OutcomesSectionProps {
@@ -13,7 +11,8 @@ export default function OutcomesSection({ data }: OutcomesSectionProps) {
   return (
     <section className="py-16 md:py-32">
       <div className="max-width-container">
-        <motion.div
+        <Motion
+          as="div"
           className="flex flex-col gap-4 mb-16 md:mb-24"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -24,7 +23,7 @@ export default function OutcomesSection({ data }: OutcomesSectionProps) {
           <Typography variant="heading-2" as="h2">
             {data.heading}
           </Typography>
-        </motion.div>
+        </Motion>
 
         {/* Two-column grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
@@ -32,8 +31,9 @@ export default function OutcomesSection({ data }: OutcomesSectionProps) {
             {data.outcomes
               .slice(0, Math.ceil(data.outcomes.length / 2))
               .map((outcome, index) => (
-                <motion.div
+                <Motion
                   key={outcome}
+                  as="div"
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true, margin: '-100px' }}
@@ -46,15 +46,16 @@ export default function OutcomesSection({ data }: OutcomesSectionProps) {
                   <Typography variant="body-large" as="p">
                     {outcome}
                   </Typography>
-                </motion.div>
+                </Motion>
               ))}
           </div>
           <div className="flex flex-col gap-4 md:pl-8">
             {data.outcomes
               .slice(Math.ceil(data.outcomes.length / 2))
               .map((outcome, index) => (
-                <motion.div
+                <Motion
                   key={outcome}
+                  as="div"
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true, margin: '-100px' }}
@@ -67,7 +68,7 @@ export default function OutcomesSection({ data }: OutcomesSectionProps) {
                   <Typography variant="body-large" as="p">
                     {outcome}
                   </Typography>
-                </motion.div>
+                </Motion>
               ))}
           </div>
         </div>

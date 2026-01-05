@@ -34,6 +34,7 @@ const topicOptions = [
   { value: '360-feedback', label: '360° Feedback' },
   { value: 'surveys-assessments', label: 'Surveys & Assessments' },
   { value: 'custom-engagements', label: 'Custom Engagements' },
+  { value: 'newsletter-signup', label: 'Newsletter Signup' },
   { value: 'general-inquiry', label: 'General Inquiry' },
 ]
 
@@ -222,6 +223,11 @@ export default function BookCallForm() {
 
   return (
     <form onSubmit={handleSubmit} className="w-full space-y-6">
+      <Typography variant="body" as="p" className="text-foreground-dark/80">
+        Share a bit about what brings you here so we can prepare thoughtfully
+        for the conversation. What you share helps us understand your context
+        and make the most of our time together.
+      </Typography>
       <Input
         label="NAME *"
         type="text"
@@ -308,7 +314,7 @@ export default function BookCallForm() {
         <Button
           type="submit"
           variant="primary"
-          size="lg"
+          size="md"
           disabled={isSubmitting || !isFormValid()}
         >
           {isSubmitting ? 'Submitting...' : 'Submit'}

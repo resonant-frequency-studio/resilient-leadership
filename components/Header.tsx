@@ -185,21 +185,80 @@ const Header = () => {
           ${isMobileMenuOpen ? 'translate-y-0' : '-translate-y-full'}
         `}
       >
-        <nav className="h-full flex flex-col pt-[90px] px-6">
-          <div className="flex flex-col gap-6">
-            <Link
-              href="/services"
-              onClick={handleNavLinkClick}
-              className="hover:text-button-primary transition-colors py-2"
-            >
-              <Typography
-                variant="body-large"
-                as="span"
-                className="font-medium"
+        <nav className="h-full flex flex-col pt-[90px] px-6 overflow-y-auto">
+          <div className="flex flex-col gap-4 pb-6">
+            {/* What We Do with nested services */}
+            <div className="flex flex-col gap-2">
+              <Link
+                href="/services"
+                onClick={handleNavLinkClick}
+                className="hover:text-button-primary transition-colors py-2"
               >
-                What We Do
-              </Typography>
-            </Link>
+                <Typography
+                  variant="body-large"
+                  as="span"
+                  className="font-medium"
+                >
+                  What We Do
+                </Typography>
+              </Link>
+              <div className="flex flex-col gap-2 pl-4">
+                <Link
+                  href="/services/executive-coaching"
+                  onClick={handleNavLinkClick}
+                  className="hover:text-button-primary transition-colors py-2"
+                >
+                  <Typography variant="body" as="span">
+                    Executive Coaching
+                  </Typography>
+                </Link>
+                <Link
+                  href="/services/360-feedback"
+                  onClick={handleNavLinkClick}
+                  className="hover:text-button-primary transition-colors py-2"
+                >
+                  <Typography variant="body" as="span">
+                    Executive Coaching + 360° Feedback
+                  </Typography>
+                </Link>
+                <Link
+                  href="/services/team-coaching"
+                  onClick={handleNavLinkClick}
+                  className="hover:text-button-primary transition-colors py-2"
+                >
+                  <Typography variant="body" as="span">
+                    Team Coaching
+                  </Typography>
+                </Link>
+                <Link
+                  href="/services/change-management"
+                  onClick={handleNavLinkClick}
+                  className="hover:text-button-primary transition-colors py-2"
+                >
+                  <Typography variant="body" as="span">
+                    Change Management
+                  </Typography>
+                </Link>
+                <Link
+                  href="/services/surveys-assessments"
+                  onClick={handleNavLinkClick}
+                  className="hover:text-button-primary transition-colors py-2"
+                >
+                  <Typography variant="body" as="span">
+                    Surveys & Assessments
+                  </Typography>
+                </Link>
+                <Link
+                  href="/services/custom-engagements"
+                  onClick={handleNavLinkClick}
+                  className="hover:text-button-primary transition-colors py-2"
+                >
+                  <Typography variant="body" as="span">
+                    Custom Engagements
+                  </Typography>
+                </Link>
+              </div>
+            </div>
             <a
               href={articlesLink}
               onClick={handleNavLinkClick}
@@ -224,6 +283,19 @@ const Header = () => {
                 className="font-medium"
               >
                 About
+              </Typography>
+            </Link>
+            <Link
+              href="/contact"
+              onClick={handleNavLinkClick}
+              className="hover:text-button-primary transition-colors py-2"
+            >
+              <Typography
+                variant="body-large"
+                as="span"
+                className="font-medium"
+              >
+                Contact
               </Typography>
             </Link>
           </div>

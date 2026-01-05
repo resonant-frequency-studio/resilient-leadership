@@ -5,7 +5,7 @@ import WhatWorkFeelsLikeSection from '../_components/WhatWorkFeelsLikeSection'
 import CoachingApproachSection from '../_components/CoachingApproachSection'
 import OutcomesSection from '../_components/OutcomesSection'
 import WhoThisIsForSection from '../_components/WhoThisIsForSection'
-import AboutCharleneSection from '../_components/AboutCharleneSection'
+import AboutSection from '../../_components/AboutSection'
 import { changeManagementData } from './data'
 
 export const metadata: Metadata = {
@@ -23,7 +23,7 @@ export default function ChangeManagementPage() {
       <CoachingApproachSection data={changeManagementData.coachingApproach} />
       <OutcomesSection data={changeManagementData.outcomes} />
       <WhoThisIsForSection data={changeManagementData.whoThisIsFor} />
-      <AboutCharleneSection data={changeManagementData.aboutCharlene} />
+      <AboutSection data={changeManagementData.aboutCharlene} />
     </>
   )
 }

@@ -1,9 +1,7 @@
-'use client'
-
 import Image from 'next/image'
-import { motion } from 'framer-motion'
 import Typography from '@/components/Typography'
 import Pill from '@/components/Pill'
+import Motion from '@/components/Motion'
 
 const benefits = [
   {
@@ -30,7 +28,8 @@ export default function WhyCoachingSection() {
       <div className="max-width-container">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-16 items-start">
           {/* Left column - Pill, headline, paragraph, and "Over time..." */}
-          <motion.div
+          <Motion
+            as="div"
             className="flex flex-col items-start gap-8 md:gap-12 lg:h-full"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -65,15 +64,16 @@ export default function WhyCoachingSection() {
                 </div>
               </div>
             </div>
-          </motion.div>
+          </Motion>
 
           {/* Right column - Image grid */}
           <div>
             {/* Images grid - 2x2 on desktop */}
             <div className="grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-8">
               {benefits.map((benefit, index) => (
-                <motion.div
+                <Motion
                   key={index}
+                  as="div"
                   className="relative aspect-3/4 rounded-2xl overflow-hidden"
                   initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
@@ -98,7 +98,7 @@ export default function WhyCoachingSection() {
                       </Typography>
                     </div>
                   </div>
-                </motion.div>
+                </Motion>
               ))}
             </div>
           </div>
