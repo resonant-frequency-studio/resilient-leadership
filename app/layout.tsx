@@ -2,7 +2,8 @@ import type { Metadata } from 'next'
 import { Cormorant_Garamond, Inter } from 'next/font/google'
 import './globals.css'
 import SmoothScrollProvider from '@/providers/SmoothScrollProvider'
-import { Footer, Header } from '@/components'
+import Footer from '@/components/Footer'
+import Header from '@/components/Header'
 
 const cormorantGaramond = Cormorant_Garamond({
   subsets: ['latin'],

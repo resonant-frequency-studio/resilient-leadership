@@ -1,9 +1,7 @@
-'use client'
-
 import Image from 'next/image'
-import { motion } from 'framer-motion'
 import Typography from '@/components/Typography'
 import SocialLinks from '@/components/SocialLinks'
+import Motion from '@/components/Motion'
 
 export default function FounderSection() {
   return (
@@ -11,7 +9,8 @@ export default function FounderSection() {
       <div className="max-width-container px-8 md:px-16 lg:px-24">
         <div className="flex flex-col lg:flex-row gap-12 md:gap-16 lg:gap-24 items-center">
           {/* Left Column - Portrait */}
-          <motion.div
+          <Motion
+            as="div"
             className="relative aspect-3/4 w-full lg:w-[40%] mx-auto lg:mx-0"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -25,10 +24,11 @@ export default function FounderSection() {
               className="object-cover rounded-2xl"
               style={{ objectPosition: 'center 30%' }}
             />
-          </motion.div>
+          </Motion>
 
           {/* Right Column - Content */}
-          <motion.div
+          <Motion
+            as="div"
             className="flex flex-col gap-6 w-full lg:w-[60%]"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -94,7 +94,8 @@ export default function FounderSection() {
             </div>
 
             {/* Pull Quote */}
-            <motion.div
+            <Motion
+              as="div"
               className="bg-secondary rounded-2xl p-6 md:p-8 mt-4"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -107,7 +108,7 @@ export default function FounderSection() {
                 emerge. Coaching creates the space to hear that call and the
                 skills to know what to do next.
               </Typography>
-            </motion.div>
+            </Motion>
 
             {/* Social Links */}
             <SocialLinks
@@ -117,7 +118,7 @@ export default function FounderSection() {
               youtube="https://www.youtube.com/@resilientleadership"
               className="mt-2"
             />
-          </motion.div>
+          </Motion>
         </div>
       </div>
     </section>

@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import Typography from '@/components/Typography'
-import { Pill } from '@/components'
+import Pill from '@/components/Pill'
 
 export const metadata: Metadata = {
   title: 'Privacy Policy | Resilient Leadership',

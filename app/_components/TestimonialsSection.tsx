@@ -1,9 +1,7 @@
-'use client'
-
 import Image from 'next/image'
-import { motion } from 'framer-motion'
 import Typography from '@/components/Typography'
 import Pill from '@/components/Pill'
+import Motion from '@/components/Motion'
 
 const testimonials = [
   {
@@ -28,7 +26,8 @@ export default function TestimonialsSection() {
   return (
     <section className="bg-third py-16 md:py-32">
       <div className="max-width-container">
-        <motion.div
+        <Motion
+          as="div"
           className="flex flex-col items-center text-center gap-8 md:gap-12 max-w-3xl mx-auto mb-16 md:mb-24"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -46,12 +45,13 @@ export default function TestimonialsSection() {
           <Typography variant="body-muted" as="p">
             A few reflections from leaders who have worked with Charlene.
           </Typography>
-        </motion.div>
+        </Motion>
 
         {/* Testimonials grid - Image + 2 testimonials */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 items-stretch">
           {/* Image card */}
-          <motion.div
+          <Motion
+            as="div"
             className="bg-main rounded-2xl overflow-hidden flex"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -70,12 +70,13 @@ export default function TestimonialsSection() {
                 className="object-cover object-center"
               />
             </div>
-          </motion.div>
+          </Motion>
 
           {/* Testimonial cards */}
           {testimonials.map((testimonial, index) => (
-            <motion.div
+            <Motion
               key={index}
+              as="div"
               className="bg-main rounded-2xl p-8 flex flex-col gap-4"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -119,7 +120,7 @@ export default function TestimonialsSection() {
                   />
                 </div>
               </div>
-            </motion.div>
+            </Motion>
           ))}
         </div>
       </div>

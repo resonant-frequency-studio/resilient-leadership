@@ -1,9 +1,7 @@
-'use client'
-
 import Image from 'next/image'
-import { motion } from 'framer-motion'
 import Typography from '@/components/Typography'
 import SocialLinks, { SocialLinksProps } from '@/components/SocialLinks'
+import Motion from '@/components/Motion'
 
 interface TeamMemberSectionProps {
   name: string
@@ -31,7 +29,8 @@ export default function TeamMemberSection({
       <div className="max-width-container px-8 md:px-16 lg:px-24">
         <div className="flex flex-col lg:flex-row gap-12 md:gap-16 lg:gap-24 items-center">
           {/* Left Column - Portrait */}
-          <motion.div
+          <Motion
+            as="div"
             className="relative aspect-3/4 w-full lg:w-[40%] mx-auto lg:mx-0"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -44,10 +43,11 @@ export default function TeamMemberSection({
               fill
               className="object-cover rounded-2xl"
             />
-          </motion.div>
+          </Motion>
 
           {/* Right Column - Content */}
-          <motion.div
+          <Motion
+            as="div"
             className="flex flex-col gap-6 w-full lg:w-[60%]"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -82,7 +82,7 @@ export default function TeamMemberSection({
 
             {/* Social Links */}
             {socialLinks && <SocialLinks {...socialLinks} className="mt-2" />}
-          </motion.div>
+          </Motion>
         </div>
       </div>
     </section>

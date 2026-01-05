@@ -1,9 +1,7 @@
-'use client'
-
 import Image from 'next/image'
-import { motion } from 'framer-motion'
 import Typography from '@/components/Typography'
 import Pill from '@/components/Pill'
+import Motion from '@/components/Motion'
 import { ServiceCoachingApproachData } from './types'
 
 interface CoachingApproachSectionProps {
@@ -56,7 +54,8 @@ export default function CoachingApproachSection({
   return (
     <section className="bg-main py-16 md:py-32">
       <div className="max-width-container">
-        <motion.div
+        <Motion
+          as="div"
           className="flex flex-col gap-4 mb-16 md:mb-24"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -67,7 +66,7 @@ export default function CoachingApproachSection({
           <Typography variant="heading-2" as="h2">
             {data.heading}
           </Typography>
-        </motion.div>
+        </Motion>
 
         {/* Masonry grid - 3 columns on md-xl, 5 columns on xl+ */}
         <div className="grid grid-cols-1 md:grid-cols-3 xl:grid-cols-5 gap-6 md:gap-8">
@@ -211,8 +210,9 @@ export default function CoachingApproachSection({
             return items.map((item, itemIndex) => {
               if (item.type === 'filler') {
                 return (
-                  <motion.div
+                  <Motion
                     key={`filler-${item.index}`}
+                    as="div"
                     className={`hidden md:block ${item.colSpan} ${item.bgColor} ${item.minHeight} rounded-2xl`}
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -228,8 +228,9 @@ export default function CoachingApproachSection({
 
               if (item.type === 'image') {
                 return (
-                  <motion.div
+                  <Motion
                     key={`image-${item.index}`}
+                    as="div"
                     className={`${item.colSpan} ${item.minHeight} rounded-2xl relative overflow-hidden flex flex-col`}
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -275,7 +276,7 @@ export default function CoachingApproachSection({
                         </Typography>
                       </div>
                     )}
-                  </motion.div>
+                  </Motion>
                 )
               }
 
@@ -283,8 +284,9 @@ export default function CoachingApproachSection({
               const style = blockStyles[item.styleIndex]
 
               return (
-                <motion.div
+                <Motion
                   key={item.approach.title}
+                  as="div"
                   className={`${item.colSpan} ${style.bgColor} ${item.minHeight} rounded-2xl p-6 md:p-8 flex flex-col gap-4`}
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
@@ -309,7 +311,7 @@ export default function CoachingApproachSection({
                   >
                     {item.approach.description}
                   </Typography>
-                </motion.div>
+                </Motion>
               )
             })
           })()}
