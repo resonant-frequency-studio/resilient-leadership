@@ -314,6 +314,30 @@ export default function BookCallForm() {
           {isSubmitting ? 'Submitting...' : 'Submit'}
         </Button>
       </div>
+
+      {/* Custom reCAPTCHA badge */}
+      <div className="mt-6 pt-6 border-t border-foreground-dark/10">
+        <div className="flex items-center justify-start gap-2 text-xs text-foreground-dark/60">
+          <span>Protected by reCAPTCHA</span>
+          <Link
+            href="https://policies.google.com/privacy"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline hover:no-underline"
+          >
+            Privacy
+          </Link>
+          <span>-</span>
+          <Link
+            href="https://policies.google.com/terms"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline hover:no-underline"
+          >
+            Terms
+          </Link>
+        </div>
+      </div>
     </form>
   )
 }

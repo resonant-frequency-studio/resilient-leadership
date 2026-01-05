@@ -1,5 +1,12 @@
 @import 'tailwindcss';
 
+/* Hide the default reCAPTCHA badge on all pages */
+.grecaptcha-badge {
+  visibility: hidden !important;
+  opacity: 0 !important;
+  display: none !important;
+}
+
 :root {
   /* Background Colors */
   --color-main: #f7f7f2;
