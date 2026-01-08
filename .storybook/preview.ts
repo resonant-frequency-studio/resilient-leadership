@@ -1,5 +1,23 @@
 import type { Preview } from '@storybook/nextjs-vite'
+import React from 'react'
+import { Cormorant_Garamond, Inter } from 'next/font/google'
 import '../app/globals.css'
+
+// Load fonts for Storybook
+const cormorantGaramond = Cormorant_Garamond({
+  subsets: ['latin'],
+  weight: ['400', '500'],
+  style: ['normal', 'italic'],
+  variable: '--font-heading',
+  display: 'swap',
+})
+
+const inter = Inter({
+  subsets: ['latin'],
+  weight: ['400', '500', '600'],
+  variable: '--font-body',
+  display: 'swap',
+})
 
 const preview: Preview = {
   parameters: {
@@ -17,6 +35,19 @@ const preview: Preview = {
       test: 'todo',
     },
   },
+  decorators: [
+    Story => {
+      // Apply font variables to the story wrapper
+      return React.createElement(
+        'div',
+        {
+          className: `${cormorantGaramond.variable} ${inter.variable}`,
+          style: { fontFamily: inter.style.fontFamily },
+        },
+        React.createElement(Story)
+      )
+    },
+  ],
 }
 
 export default preview

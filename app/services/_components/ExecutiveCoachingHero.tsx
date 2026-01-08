@@ -1,10 +1,8 @@
-'use client'
-
 import Image from 'next/image'
-import { motion } from 'framer-motion'
 import Typography from '@/components/Typography'
 import Button from '@/components/Button'
 import Pill from '@/components/Pill'
+import Motion from '@/components/Motion'
 import { ServiceHeroData } from './types'
 
 interface ServiceHeroProps {
@@ -17,7 +15,8 @@ export default function ServiceHero({ data }: ServiceHeroProps) {
       <div className="max-width-container">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-16 items-center">
           {/* Left side - Text content */}
-          <motion.div
+          <Motion
+            as="div"
             className="flex flex-col gap-8 md:gap-12"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -53,10 +52,11 @@ export default function ServiceHero({ data }: ServiceHeroProps) {
                 {data.ctaText}
               </Button>
             </div>
-          </motion.div>
+          </Motion>
 
           {/* Right side - Image */}
-          <motion.div
+          <Motion
+            as="div"
             className="flex justify-end"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -72,7 +72,7 @@ export default function ServiceHero({ data }: ServiceHeroProps) {
                 priority
               />
             </div>
-          </motion.div>
+          </Motion>
         </div>
       </div>
     </section>

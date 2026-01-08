@@ -3,7 +3,7 @@ import WhatWeDoHero from './_components/WhatWeDoHero'
 import LeadershipMoments from './_components/LeadershipMoments'
 import ServicesSection from './_components/ServicesSection'
 import OutcomesSectionServices from './_components/OutcomesSectionServices'
-import AboutCharleneSectionServices from './_components/AboutCharleneSectionServices'
+import AboutSection from '../_components/AboutSection'
 
 export const metadata: Metadata = {
   title: 'Our Services | Resilient Leadership',
@@ -18,7 +18,7 @@ export default function WhatWeDoPage() {
       <LeadershipMoments />
       <ServicesSection />
       <OutcomesSectionServices />
-      <AboutCharleneSectionServices />
+      <AboutSection />
     </>
   )
 }

@@ -113,6 +113,28 @@ export const BodySmall: Story = {
   },
 }
 
+export const BodyMuted: Story = {
+  args: {
+    variant: 'body-muted',
+    children: 'Body Muted - This is muted body text for secondary information.',
+  },
+}
+
+export const BodyLight: Story = {
+  args: {
+    variant: 'body-light',
+    children: 'Body Light - This is light body text for dark backgrounds.',
+    className: 'bg-fifth p-4 rounded',
+  },
+}
+
+export const BodySemibold: Story = {
+  args: {
+    variant: 'body-semibold',
+    children: 'Body Semibold - This is semibold body text for emphasis.',
+  },
+}
+
 export const Caption: Story = {
   args: {
     variant: 'caption',

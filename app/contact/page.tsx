@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import Typography from '@/components/Typography'
 import BookCallForm from '@/components/BookCallForm'
-import { Pill } from '@/components'
+import Pill from '@/components/Pill'
 import ReCaptchaProvider from '@/providers/ReCaptchaProvider'
 
 export const metadata: Metadata = {
@@ -104,15 +104,6 @@ export default function ContactPage() {
 
             {/* Right Column - Form */}
             <div className="flex flex-col gap-6 bg-secondary rounded-2xl p-6">
-              <Typography
-                variant="body"
-                as="p"
-                className="text-foreground-dark/80"
-              >
-                Share a bit about what brings you here so we can prepare
-                thoughtfully for the conversation. What you share helps us
-                understand your context and make the most of our time together.
-              </Typography>
               <BookCallForm />
             </div>
           </div>

@@ -1,8 +1,6 @@
-'use client'
-
 import Image from 'next/image'
-import { motion } from 'framer-motion'
 import Typography from '@/components/Typography'
+import Motion from '@/components/Motion'
 
 export default function HowWeWorkSection() {
   return (
@@ -11,7 +9,8 @@ export default function HowWeWorkSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-16 items-center">
           {/* Left column - Image with mask (top on mobile) */}
           <div className="order-2 lg:order-1">
-            <motion.div
+            <Motion
+              as="div"
               className="howWeWorkMask relative aspect-square overflow-hidden w-full"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -25,11 +24,12 @@ export default function HowWeWorkSection() {
                 className="object-cover brightness-[0.8] contrast-[1.1] saturate-[0.9]"
                 priority
               />
-            </motion.div>
+            </Motion>
           </div>
 
           {/* Right column - Content (bottom on mobile) */}
-          <motion.div
+          <Motion
+            as="div"
             className="flex flex-col gap-8 md:gap-12 order-1 lg:order-2"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -69,7 +69,7 @@ export default function HowWeWorkSection() {
                 genuinely your own.
               </Typography>
             </div>
-          </motion.div>
+          </Motion>
         </div>
       </div>
     </section>

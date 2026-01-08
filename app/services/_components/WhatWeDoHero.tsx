@@ -1,10 +1,8 @@
-'use client'
-
 import Image from 'next/image'
-import { motion } from 'framer-motion'
 import Typography from '@/components/Typography'
 import Button from '@/components/Button'
 import Pill from '@/components/Pill'
+import Motion from '@/components/Motion'
 
 export default function WhatWeDoHero() {
   return (
@@ -12,7 +10,8 @@ export default function WhatWeDoHero() {
       <div className="max-width-container">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-16 items-center">
           {/* Left side - Text content */}
-          <motion.div
+          <Motion
+            as="div"
             className="flex flex-col gap-8 md:gap-12"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -51,10 +50,11 @@ export default function WhatWeDoHero() {
                 Explore how we work
               </Button>
             </div>
-          </motion.div>
+          </Motion>
 
           {/* Right side - Image */}
-          <motion.div
+          <Motion
+            as="div"
             className="flex justify-end"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -70,7 +70,7 @@ export default function WhatWeDoHero() {
                 priority
               />
             </div>
-          </motion.div>
+          </Motion>
         </div>
       </div>
     </section>

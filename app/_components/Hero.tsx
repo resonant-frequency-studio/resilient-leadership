@@ -1,12 +1,10 @@
-'use client'
-
 import Image from 'next/image'
-import { motion } from 'framer-motion'
 import Button from '@/components/Button'
 import Typography from '@/components/Typography'
 import Pill from '@/components/Pill'
 import TickerTape from '@/components/TickerTape'
 import { ArrowRight } from '@/components/icons/ArrowRight'
+import Motion from '@/components/Motion'
 
 const clientLogos = [
   '/logos/Capital_One_logo.svg',
@@ -41,7 +39,8 @@ export default function Hero() {
           {/* Left side - Text content */}
           <div className="flex flex-col gap-8 md:gap-12">
             {/* Main heading */}
-            <motion.div
+            <Motion
+              as="div"
               className="space-y-2 md:space-y-3 lg:mt-16"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -52,10 +51,11 @@ export default function Hero() {
                 <br />
                 Grow with resilience.
               </Typography>
-            </motion.div>
+            </Motion>
 
             {/* Description paragraph */}
-            <motion.div
+            <Motion
+              as="div"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, ease: 'easeOut', delay: 1.2 }}
@@ -65,11 +65,12 @@ export default function Hero() {
                 responsibility, and change and want to lead with courage,
                 wisdom, and steadiness.
               </Typography>
-            </motion.div>
+            </Motion>
 
             {/* CTA Buttons */}
-            <motion.div
-              className="flex flex-col sm:flex-row gap-4 pt-2"
+            <Motion
+              as="div"
+              className="flex flex-col items-center sm:items-start sm:flex-row gap-4 pt-2"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 1, ease: 'easeOut', delay: 1.5 }}
@@ -86,13 +87,14 @@ export default function Hero() {
               >
                 Explore What We Do
               </Button>
-            </motion.div>
+            </Motion>
           </div>
 
           {/* Right side - Image + Client Logos Widget */}
           <div className="flex flex-col gap-8 md:gap-12">
             <div className="flex justify-end">
-              <motion.div
+              <Motion
+                as="div"
                 className="heroMask relative aspect-square overflow-hidden size-full mx-auto lg:mx-0"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
@@ -105,11 +107,12 @@ export default function Hero() {
                   className="object-cover"
                   priority
                 />
-              </motion.div>
+              </Motion>
             </div>
 
             {/* Client Logos Widget */}
-            <motion.div
+            <Motion
+              as="div"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: '-100px' }}
@@ -122,7 +125,7 @@ export default function Hero() {
                 finance, and professional services.
               </Typography>
               <TickerTape>{logos}</TickerTape>
-            </motion.div>
+            </Motion>
           </div>
         </div>
       </div>

@@ -1,8 +1,6 @@
-'use client'
-
 import Image from 'next/image'
-import { motion } from 'framer-motion'
 import Typography from '@/components/Typography'
+import Motion from '@/components/Motion'
 
 const states = [
   {
@@ -28,7 +26,8 @@ export default function OutcomesSection() {
       <div className="max-width-container">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-16 items-center">
           {/* Left column - Image */}
-          <motion.div
+          <Motion
+            as="div"
             className="flex justify-start order-2 lg:order-1 w-full"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -43,10 +42,11 @@ export default function OutcomesSection() {
                 className="object-cover"
               />
             </div>
-          </motion.div>
+          </Motion>
 
           {/* Right column - Text content */}
-          <motion.div
+          <Motion
+            as="div"
             className="flex flex-col gap-8 md:gap-12 order-1 lg:order-2"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -77,7 +77,7 @@ export default function OutcomesSection() {
                 </div>
               ))}
             </div>
-          </motion.div>
+          </Motion>
         </div>
       </div>
     </section>
