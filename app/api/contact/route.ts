@@ -43,14 +43,10 @@ export async function POST(request: NextRequest) {
   try {
     const body = await request.json()
 
-    // Validate request body
     const validationResult = contactFormSchema.safeParse(body)
     if (!validationResult.success) {
       return NextResponse.json(
-        {
-          error: 'Validation failed',
-          details: validationResult.error.issues,
-        },
+        { error: 'Validation failed', details: validationResult.error.issues },
         { status: 400 }
       )
     }
@@ -67,11 +63,29 @@ export async function POST(request: NextRequest) {
       )
     }
 
-    // Send email via Resend
-    const contactEmail = process.env.CONTACT_EMAIL || 'contact@example.com'
-    const fromEmail = process.env.RESEND_FROM_EMAIL || 'onboarding@resend.dev'
+    const contactEmail = process.env.CONTACT_EMAIL
+    const fromEmail = process.env.RESEND_FROM_EMAIL
 
-    await resend.emails.send({
+    if (!process.env.RESEND_API_KEY) {
+      return NextResponse.json(
+        { error: 'Missing RESEND_API_KEY' },
+        { status: 500 }
+      )
+    }
+    if (!contactEmail) {
+      return NextResponse.json(
+        { error: 'Missing CONTACT_EMAIL' },
+        { status: 500 }
+      )
+    }
+    if (!fromEmail) {
+      return NextResponse.json(
+        { error: 'Missing RESEND_FROM_EMAIL' },
+        { status: 500 }
+      )
+    }
+
+    const { data, error } = await resend.emails.send({
       from: fromEmail,
       to: contactEmail,
       replyTo: email,
@@ -85,21 +99,19 @@ export async function POST(request: NextRequest) {
         <p><strong>Message:</strong></p>
         <p>${message.replace(/\n/g, '<br>')}</p>
       `,
-      text: `
-New Contact Form Submission
-
-Name: ${name}
-Email: ${email}
-Topic: ${topic}
-${date ? `Preferred Date: ${date}` : ''}
-
-Message:
-${message}
-      `,
+      text: `New Contact Form Submission\n\nName: ${name}\nEmail: ${email}\nTopic: ${topic}\n${date ? `Preferred Date: ${date}\n` : ''}\nMessage:\n${message}`,
     })
 
+    if (error) {
+      console.error('Resend error:', error)
+      return NextResponse.json(
+        { error: 'Resend rejected the request', details: error },
+        { status: 502 }
+      )
+    }
+
     return NextResponse.json(
-      { message: 'Form submitted successfully' },
+      { message: 'Form submitted successfully', id: data?.id },
       { status: 200 }
     )
   } catch (error) {
