@@ -15,9 +15,10 @@ export function getArticlesLink(hostname?: string): string {
     hostname ??
     (typeof window !== 'undefined' ? window.location.hostname : undefined)
 
-  // Production: resilientleadership.us or articles.resilientleadership.us
+  // Production: resilientleadership.us (incl. www) or articles.resilientleadership.us
   if (
     currentHostname === 'resilientleadership.us' ||
+    currentHostname === 'www.resilientleadership.us' ||
     currentHostname === 'articles.resilientleadership.us'
   ) {
     return 'https://articles.resilientleadership.us'

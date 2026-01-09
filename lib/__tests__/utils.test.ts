@@ -7,6 +7,12 @@ describe('getArticlesLink', () => {
     )
   })
 
+  it('returns production URL for www production domain', () => {
+    expect(getArticlesLink('www.resilientleadership.us')).toBe(
+      'https://articles.resilientleadership.us'
+    )
+  })
+
   it('returns production URL for articles subdomain', () => {
     expect(getArticlesLink('articles.resilientleadership.us')).toBe(
       'https://articles.resilientleadership.us'
