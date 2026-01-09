@@ -1,68 +1,47 @@
 import { getArticlesLink } from '../utils'
 
 describe('getArticlesLink', () => {
-  it('returns production URL for production domain', () => {
-    expect(getArticlesLink('resilientleadership.us')).toBe(
-      'https://articles.resilientleadership.us'
-    )
+  const originalEnv = process.env.NEXT_PUBLIC_ENV
+
+  afterEach(() => {
+    // Restore original environment variable after each test
+    if (originalEnv) {
+      process.env.NEXT_PUBLIC_ENV = originalEnv
+    } else {
+      delete process.env.NEXT_PUBLIC_ENV
+    }
   })
 
-  it('returns production URL for www production domain', () => {
-    expect(getArticlesLink('www.resilientleadership.us')).toBe(
-      'https://articles.resilientleadership.us'
-    )
+  it('returns production URL when NEXT_PUBLIC_ENV is production', () => {
+    process.env.NEXT_PUBLIC_ENV = 'production'
+    expect(getArticlesLink()).toBe('https://articles.resilientleadership.us')
   })
 
-  it('returns production URL for articles subdomain', () => {
-    expect(getArticlesLink('articles.resilientleadership.us')).toBe(
-      'https://articles.resilientleadership.us'
-    )
-  })
-
-  it('returns staging URL for staging domain', () => {
-    expect(getArticlesLink('staging.resilientleadership.us')).toBe(
+  it('returns staging URL when NEXT_PUBLIC_ENV is staging', () => {
+    process.env.NEXT_PUBLIC_ENV = 'staging'
+    expect(getArticlesLink()).toBe(
       'https://staging-articles.resilientleadership.us'
     )
   })
 
-  it('returns staging URL for localhost', () => {
-    expect(getArticlesLink('localhost')).toBe(
+  it('returns staging URL when NEXT_PUBLIC_ENV is development', () => {
+    process.env.NEXT_PUBLIC_ENV = 'development'
+    expect(getArticlesLink()).toBe(
       'https://staging-articles.resilientleadership.us'
     )
   })
 
-  it('returns staging URL for 127.0.0.1', () => {
-    expect(getArticlesLink('127.0.0.1')).toBe(
+  it('returns staging URL when NEXT_PUBLIC_ENV is not set (defaults to development)', () => {
+    delete process.env.NEXT_PUBLIC_ENV
+    expect(getArticlesLink()).toBe(
       'https://staging-articles.resilientleadership.us'
     )
   })
 
-  it('returns staging URL when hostname is undefined (server-side)', () => {
-    expect(getArticlesLink(undefined)).toBe(
+  it('returns staging URL for any other NEXT_PUBLIC_ENV value', () => {
+    process.env.NEXT_PUBLIC_ENV = 'test'
+    expect(getArticlesLink()).toBe(
       'https://staging-articles.resilientleadership.us'
-    )
-  })
-
-  it('returns staging URL for any other domain', () => {
-    expect(getArticlesLink('example.com')).toBe(
-      'https://staging-articles.resilientleadership.us'
-    )
-  })
-
-  it('returns staging URL for development domain patterns', () => {
-    expect(getArticlesLink('dev.resilientleadership.us')).toBe(
-      'https://staging-articles.resilientleadership.us'
-    )
-  })
-
-  it('uses window.location.hostname when hostname parameter is not provided', () => {
-    // This test verifies the default behavior in browser environment
-    // We can't easily mock window.location in jsdom, but we can verify
-    // the function falls back to window.location when no parameter is given
-    const result = getArticlesLink()
-    // Should return a valid URL (either staging or production)
-    expect(result).toMatch(
-      /^https:\/\/(staging-)?articles\.resilientleadership\.us$/
     )
   })
 })
