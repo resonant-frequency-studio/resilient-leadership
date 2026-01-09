@@ -7,6 +7,7 @@ import { usePathname } from 'next/navigation'
 import Button from './Button'
 import MenuButton from './MenuButton'
 import Typography from './Typography'
+import { getArticlesLink } from '@/lib/utils'
 
 const Header = () => {
   const [isVisible, setIsVisible] = useState(true)
@@ -52,18 +53,6 @@ const Header = () => {
     window.addEventListener('scroll', handleScroll, { passive: true })
     return () => window.removeEventListener('scroll', handleScroll)
   }, [lastScrollY])
-
-  // Determine Articles link based on environment
-  const getArticlesLink = () => {
-    if (typeof window !== 'undefined') {
-      const hostname = window.location.hostname
-      if (hostname === 'articles.resilientleadership.us') {
-        return 'https://articles.resilientleadership.us'
-      }
-    }
-    // Local development
-    return 'https://staging-articles.resilientleadership.us'
-  }
 
   const articlesLink = getArticlesLink()
 

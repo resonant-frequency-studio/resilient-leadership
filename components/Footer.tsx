@@ -1,20 +1,9 @@
 import Link from 'next/link'
 import Typography from './Typography'
 import SocialLinks from './SocialLinks'
+import { getArticlesLink } from '@/lib/utils'
 
 const Footer = () => {
-  // Determine Articles link based on environment
-  const getArticlesLink = () => {
-    if (typeof window !== 'undefined') {
-      const hostname = window.location.hostname
-      if (hostname === 'articles.resilientleadership.us') {
-        return 'https://articles.resilientleadership.us'
-      }
-    }
-    // Local development
-    return 'https://staging-articles.resilientleadership.us'
-  }
-
   const articlesLink = getArticlesLink()
 
   return (
